@@ -77,8 +77,18 @@ class SignupFormModelValidatorTests: XCTestCase {
     }
     
     
+    func testSignUpFormModelValidator_WhenValidEmailIsProvided_ShouldReturnTrue() {
+        let isEmailValid = sut.isValidEmailFormat(email: "ozgun.yildiz@hotmail.de")
+        
+        XCTAssertTrue(isEmailValid, "The isValidEmailFormat() should have returned TRUE for a valid email but returned FALSE")
+    }
+    
     
     func testSignUpFormModelValidator_WhenInvalidEmailIsProvided_ShouldReturnFalse() {
+        let isEmailInValid = sut.isValidEmailFormat(email: "ozgun@.de")
         
+        XCTAssertFalse(isEmailInValid, "The isValidEmailFormat() should have returned FALSE for an invalid email but returned TRUE")
     }
+    
+    
 }
