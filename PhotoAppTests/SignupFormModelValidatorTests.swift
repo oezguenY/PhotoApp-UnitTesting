@@ -46,6 +46,14 @@ class SignupFormModelValidatorTests: XCTestCase {
         // if isFirstNameValid returns False, the test passes. Otherwise, if it is true, the test fails
         XCTAssertFalse(isFirstNameValid, "The isFirstNameIsValid() should have returned FALSE for a first name that is shorter than 2 characters but it has returned true")
     }
+    
+    
+    func testSignUpFormModelValidator_WhenTooLongFirstNameProvided_ShouldReturnFalse() {
+        
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "ÖzgünÖzgün")
+        
+        XCTAssertFalse(isFirstNameValid, "The isFirstNameIsValid() should have returned FALSE for a first name that is longer than 9 characters but it has returned true")
+    }
 
 
 }
