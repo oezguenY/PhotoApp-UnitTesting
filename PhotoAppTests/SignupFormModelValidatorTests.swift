@@ -85,9 +85,28 @@ class SignupFormModelValidatorTests: XCTestCase {
     
     
     func testSignUpFormModelValidator_WhenInvalidEmailIsProvided_ShouldReturnFalse() {
-        let isEmailInValid = sut.isValidEmailFormat(email: "ozgun@.de")
+        let isEmailValid = sut.isValidEmailFormat(email: "ozgun@.de")
         
-        XCTAssertFalse(isEmailInValid, "The isValidEmailFormat() should have returned FALSE for an invalid email but returned TRUE")
+        XCTAssertFalse(isEmailValid, "The isValidEmailFormat() should have returned FALSE for an invalid email but returned TRUE")
+    }
+    
+    func testSignUpFormModelValidator_WhenValidPasswordIsProvided_ShouldReturnTrue() {
+        let isValidPassword = sut.isPasswordValid(password: "abcdefgh")
+        
+        XCTAssertTrue(isValidPassword, "The isPasswordValid should have returned TRUE for a valid password but returned FALSE")
+    }
+    
+    
+    func testSignUpFormModelValidator_WhenTooShortPasswordIsProvided_ShouldReturnFalse() {
+        let isValidPassword = sut.isPasswordValid(password: "abcdefg")
+        
+        XCTAssertFalse(isValidPassword, "The isPasswordValid should have returned FALSE for an invalid password but returned TRUE")
+    }
+    
+    func testSignUpFormModelValidator_WhenTooLongPasswordIsProvided_ShouldReturnFalse() {
+        let isValidPassword = sut.isPasswordValid(password: "abcdefghijklmnopqrstu")
+        
+        XCTAssertFalse(isValidPassword, "The isPasswordValid should have returned FALSE for an invalid password but returned TRUE")
     }
     
     
