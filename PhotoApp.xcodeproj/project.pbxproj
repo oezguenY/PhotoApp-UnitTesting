@@ -17,6 +17,8 @@
 		E3C980B3262AE143008DB0BD /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C980B2262AE143008DB0BD /* SignupFormModelValidatorTests.swift */; };
 		E3C980BB262AE25F008DB0BD /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C980BA262AE25F008DB0BD /* SignUpFormModelValidator.swift */; };
 		E3C980C0262AEE8E008DB0BD /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C980BF262AEE8E008DB0BD /* SignUpConstants.swift */; };
+		E3C980C5262B3C2C008DB0BD /* SignUpWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C980C4262B3C2C008DB0BD /* SignUpWebServiceTests.swift */; };
+		E3C980CA262B3CDF008DB0BD /* SignUpWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C980C9262B3CDF008DB0BD /* SignUpWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		E3C980B2262AE143008DB0BD /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		E3C980BA262AE25F008DB0BD /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 		E3C980BF262AEE8E008DB0BD /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
+		E3C980C4262B3C2C008DB0BD /* SignUpWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebServiceTests.swift; sourceTree = "<group>"; };
+		E3C980C9262B3CDF008DB0BD /* SignUpWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				E3C9808A262AE023008DB0BD /* Info.plist */,
 				E3C980BA262AE25F008DB0BD /* SignUpFormModelValidator.swift */,
 				E3C980BF262AEE8E008DB0BD /* SignUpConstants.swift */,
+				E3C980C9262B3CDF008DB0BD /* SignUpWebService.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				E3C98095262AE023008DB0BD /* Info.plist */,
 				E3C980B2262AE143008DB0BD /* SignupFormModelValidatorTests.swift */,
+				E3C980C4262B3C2C008DB0BD /* SignUpWebServiceTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C980CA262B3CDF008DB0BD /* SignUpWebService.swift in Sources */,
 				E3C98081262AE01D008DB0BD /* ViewController.swift in Sources */,
 				E3C9807D262AE01D008DB0BD /* AppDelegate.swift in Sources */,
 				E3C980BB262AE25F008DB0BD /* SignUpFormModelValidator.swift in Sources */,
@@ -277,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C980C5262B3C2C008DB0BD /* SignUpWebServiceTests.swift in Sources */,
 				E3C980B3262AE143008DB0BD /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
